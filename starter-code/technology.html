@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <style>
+    body {
+      background-image: url('assets/technology/background-technology-mobile.jpg');
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .tech-img{
+        margin-top: 2em;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+ 
+  <nav id="nav-bar">
+    <img src="./assets/shared/icon-close.svg" alt="" srcset="" onclick="closeNav()" class="close">
+    <div class="nav-links">
+      <a class="page-link" href="./">
+        <span class="page-no">00. </span>Home
+      </a>
+    </div>
+    <div class="nav-links" >
+      <a class="page-link" href="./destination.html">
+        <span class="page-no">01. </span>Destination
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="page-link" href="./crew.html">
+        <span class="page-no">02. </span>Crew
+      </a>
+    </div>
+    <div class="nav-links">
+      <a class="page-link" href="./technology.html">
+        <span class="page-no">03. </span>Technology
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <img src="assets/home/menu2.png" id="menu-bar" onclick="openNav()" alt="menu" />
+
+    <div class="text-info">
+      <h4 class="intro">  03 Space launch 101</h4>
+      <div class="tab">
+        <div class="studs" onclick="openCrew(event, 'vehicle')" id="defaultOpen">1 </div>
+        <div class="studs" onclick="openCrew(event, 'capsule')">2</div>
+        <div class="studs" onclick="openCrew(event, 'Spaceport')">3</div>
+    </div>
+      
+      <div class="tech">
+      
+        <!-- MOON -->
+        <div id="vehicle" class="tabcontent">
+          <img class="tech-img" src="assets/technology/image-launch-vehicle-landscape.jpg" alt="destination-mars">
+          <h5>The terminology...</h5>
+          <h4>Launch vehicle</h4>    
+          <p> A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!
+          </p>
+        </div>
+  
+        <!-- MARS -->
+        <div id="capsule" class="tabcontent">
+          <img class="tech-img" src="assets/technology/image-space-capsule-landscape.jpg" alt="destination-mars">  
+          <h5>The terminology...</h5>
+          <h4>Space capsule</h4>          
+          <p>
+            A space capsule is an often-crewed spacecraft that uses a blunt-body reentry 
+            capsule to reenter the Earth's atmosphere without wings. Our capsule is where 
+            you'll spend your time during the flight. It includes a space gym, cinema, 
+            and plenty of other activities to keep you entertained.</p>          
+        </div>
+
+        <!-- EUROPA -->
+        <div id="Spaceport" class="tabcontent">
+          <img class="tech-img" src="assets/technology/image-spaceport-landscape.jpg" alt="destination-mars">
+          <h5>The terminology...</h5>
+          <h4>Spaceport</h4>
+          <p>Spaceport
+            A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+            by analogy to the seaport for ships or airport for aircraft. Based in the 
+            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+            of the Earth’s rotation for launch. 
+          </p>
+        </div>
+  
+      </div>    
+    
+  </main>
+
+  
+
+  
+
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>

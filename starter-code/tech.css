@@ -1,0 +1,51 @@
+body{
+    margin: auto;
+    
+    color: rgb(194, 193, 193);
+    overflow-x: hidden;
+}
+
+nav{
+    background-color: rgba(0, 5, 34, 0.945);
+    position: fixed;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Landasans';
+    visibility: hidden;
+}
+.nav-links{
+    margin: 2.5em 1.5em;
+    font-size: 22px;
+}
+.nav-links:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.close{
+    position: relative;
+    left: 9%;
+    font-size: 25px;
+    background-color: white;
+    width: 30px;
+    color: rgb(116, 3, 3);
+    font-weight: 500;
+
+}
+
+main{
+    text-align: center;
+    margin: .5em 1em;
+    padding: 3em 1em;
+    font-family: 'poppins', sans-serif;
+}
+
+p{
+    font-size: 12px;
+    line-height: 1.8em;
+}
+
+
+
+
